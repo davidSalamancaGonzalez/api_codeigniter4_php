@@ -1,0 +1,139 @@
+CRITICAL - 2022-12-20 03:57:59 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 03:59:08 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 03:59:16 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 03:59:46 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:00:39 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:01:31 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:03:59 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:04:00 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:04:01 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:05:58 --> Class "App\Controllers\Api\bookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:07:47 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:42:57 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:47:03 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:50:46 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:54:39 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 05:01:01 --> Declaration of App\Controllers\Api\BookController::delete($book_id) must be compatible with CodeIgniter\RESTful\ResourceController::delete($id = null)
+in APPPATH\Controllers\Api\BookController.php on line 143.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-20 05:01:21 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 05:05:35 --> Class "App\Controllers\Api\BookModel" not found
+in APPPATH\Controllers\Api\BookController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->listBook()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 05:16:24 --> Duplicate entry '0' for key 'PRIMARY'
+CRITICAL - 2022-12-20 05:16:24 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `books` (`isbn`, `title`, `description`, `author`) VALUES (\'\\"56473\\"\', \'Dora la Exploradora\', \'Dora Explora heavy por ahí\', \'Ni idea\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `books` (`isbn`, `title`, `description`, `author`) VALUES (\'\\"56473\\"\', \'Dora la Exploradora\', \'Dora Explora heavy por ahí\', \'Ni idea\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `books` (`isbn`, `title`, `description`, `author`) VALUES (\'\\"56473\\"\', \'Dora la Exploradora\', \'Dora Explora heavy por ahí\', \'Ni idea\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `books` (`isbn`, `title`, `description`, `author`) VALUES (:isbn:, :title:, :description:, :author:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Api\BookController.php(114): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\BookController->addBook()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\BookController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
