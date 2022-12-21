@@ -18,6 +18,7 @@ class UserModel extends Model
         "name", 
 		"email", 
 		"phone_no",
+        "cp",
 		"password"
     ];
 

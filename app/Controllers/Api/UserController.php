@@ -19,6 +19,7 @@ class UserController extends ResourceController
             "name" => "required",
             "email" => "required|valid_email|is_unique[users.email]|min_length[6]",
             "phone_no" => "required|mobileValidation[phone_no]",
+            "cp" => "required|exact_length[5]",
             "password" => "required",
         ];
 
@@ -35,6 +36,9 @@ class UserController extends ResourceController
             "phone_no" => [
                 "required" => "Phone Number is required",
                 "mobileValidation" => "Phone is not in format"
+            ],
+            "cp" => [
+                "required" => "Postal code required",
             ],
             "password" => [
                 "required" => "password is required"
@@ -57,6 +61,7 @@ class UserController extends ResourceController
                 "name" => $this->request->getVar("name"),
                 "email" => $this->request->getVar("email"),
                 "phone_no" => $this->request->getVar("phone_no"),
+                "cp" => $this->request->getVar("cp"),
                 "password" => password_hash($this->request->getVar("password"), PASSWORD_DEFAULT),
             ];
 
@@ -121,7 +126,7 @@ class UserController extends ResourceController
                 if (password_verify($this->request->getVar("password"), $userdata['password'])) {
 
                     $key = getenv('JWT_SECRET');
-
+//DATO TIEMPO TOKEN
                     $iat = time(); // current timestamp value
                     $nbf = $iat + 10;
                     $exp = $iat + 3600;
@@ -174,6 +179,8 @@ class UserController extends ResourceController
 
         try {
             //$header = $this->request->getHeader("Authorization");
+            //HTTP AUTHORI... es el token que enviamos por la petición GET
+            //decode con la key de env
             $token = $this->request->getServer("HTTP_AUTHORIZATION");
             $token = str_replace('Bearer ', '', $token);
             $decoded = JWT::decode($token, new Key($key, 'HS256'));
