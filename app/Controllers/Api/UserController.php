@@ -14,12 +14,15 @@ class UserController extends ResourceController
 
     public function register()
     {
+        //Validaciones
         $rules = [
             "name" => "required",
             "email" => "required|valid_email|is_unique[users.email]|min_length[6]",
             "phone_no" => "required|mobileValidation[phone_no]",
             "password" => "required",
         ];
+
+        //Mensajes error
 
         $messages = [
             "name" => [
@@ -56,6 +59,8 @@ class UserController extends ResourceController
                 "phone_no" => $this->request->getVar("phone_no"),
                 "password" => password_hash($this->request->getVar("password"), PASSWORD_DEFAULT),
             ];
+
+            //Password hash es una función nativa de PHP. PASSWORD_DEFAULT es el tipo de codificación. 
 
             if ($userModel->insert($data)) {
 
@@ -111,7 +116,8 @@ class UserController extends ResourceController
             $userdata = $userModel->where("email", $this->request->getVar("email"))->first();
 
             if (!empty($userdata)) {
-
+//password verify necesita dos parámetros "password" la enviamos nosotros por el formulario y $userdata nos da el password del back.
+//de más arriba. Si va bien capturamos variable de entorno getenv('jwt secret'), configuramos el tiempo y codificamos el JWT.
                 if (password_verify($this->request->getVar("password"), $userdata['password'])) {
 
                     $key = getenv('JWT_SECRET');
