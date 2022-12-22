@@ -22,18 +22,19 @@ class OrderController extends ResourceController
     public function listOrder()
     {
         $builder = $this->db->table('orders');
-        $builder -> select('*');
+        $builder->select('*');
+        $builder->join('users', 'users.id_user = orders.user_id','left');
+        $builder->join('books', 'books.id_book = orders.book_id','left'); 
         $query = $builder->get();
-
+    
         $response = [
             'status' => 200,
             "error" => false,
-            'messages' => 'Complete List',
+            'messages' => 'List Order',
             'data' => $query->getResultArray()
-
         ];
-  
-    return $this->respond($response);
+    
+        return $this->respond($response);
     }
 
     /**
@@ -44,7 +45,7 @@ class OrderController extends ResourceController
     public function show($user_id = null)
     {
         $builder = $this->db->table('orders');
-        $builder->select('*');
+        $builder->select('id_book');
         $builder->join('users', 'users.id_user = orders.user_id','left');
         $builder->join('books', 'books.id_book = orders.book_id','left'); 
         $builder->where(['id_user' => $user_id]);
