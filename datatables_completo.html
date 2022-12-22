@@ -18,13 +18,13 @@
 			<thead>
 				<tr>
 					<th data-priority="1">OrderID</th>
-					<th data-priority="6">title</th>
+					<th data-priority="2">title</th>
 					<th data-priority="7">description</th>
-					<th data-priority="3">emaaail</th>
-					<th data-priority="5">name_comprador</th>
-					<th data-priority="2">quantity</th>
+					<th>email</th>
+					<th>name_comprador</th>
+					<th>quantity</th>
 					<th data-priority="4">fecha</th>
-					<th>CMD</th>
+					<th data-priority="3">CMD</th>
 				</tr>
 			</thead>
 			<tfoot>
@@ -32,7 +32,7 @@
 					<th>OrderID</th>
 					<th>title</th>
 					<th>description</th>
-					<th>emaaail</th>
+					<th>email</th>
 					<th>name_comprador</th>
 					<th>quantity</th>
 					<th>fecha</th>
@@ -53,12 +53,16 @@
 	<script>
 	$(document).ready(function() {
 		$('#mi_tabla').DataTable( {
-			responsive: true,
-			order:[[5, "desc"], [0, "asc"]],
+			"columnDefs": [ {
+				"targets": 7,
+				"data": "description",
+				"render": function ( data, type, row, meta ) {
+				  console.log(row);
+				  return '<a class="btn btn-outline-primary btn-sm" href="mi_web.php?param_id='+row['id_order']+'" role="button">Link</a>';
+				}
+			  } ],
+			order: [[ 0, "desc" ]],
 			ajax: 'http://localhost:8080/api/order/list',
-			language : {
-				url : "https://cdn.datatables.net/plug-ins/1.13.1/i18n/es-ES.json"
-			},
 			columns: [
 				{data: 'id_order'},
 				{data: 'title'},
@@ -68,7 +72,23 @@
 				{data: 'quantity'},
 				{data: 'created_at'},
 				{data: 'id_order'}
-			]
+			],
+			language: {
+                url: "https://cdn.datatables.net/plug-ins/1.13.1/i18n/es-ES.json"
+            },
+			responsive: {
+				details: {
+					display: $.fn.dataTable.Responsive.display.modal( {
+						header: function ( row ) {
+							var data = row.data();
+							return 'Detalles de '+data['title'];
+						}
+					} ),
+					renderer: $.fn.dataTable.Responsive.renderer.tableAll( {
+						tableClass: 'table'
+					} )
+				}
+			}
 		} );
 	} );
 	</script>
