@@ -55,6 +55,12 @@ $routes->group("api", ["namespace" => "App\Controllers\Api"] , function($routes)
         $routes->put("update/(:num)", "BookController::updateBook/$1");
         $routes->delete("delete/(:num)", "BookController::delete/$1");
      });
+     
+    $routes->group("order",  function($routes){
+        $routes->get("list", "OrderController::listOrder");
+        $routes->get("list/(:num)", "OrderController::show/$1");
+        $routes->get("show/(:num)", "OrderController::orderShow/$1");
+    });
 
     $routes->post("register", "UserController::register");
     $routes->post("login", "UserController::login");

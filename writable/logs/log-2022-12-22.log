@@ -1,0 +1,267 @@
+ERROR - 2022-12-22 03:15:43 --> Unknown column 'users.id' in 'on clause'
+CRITICAL - 2022-12-22 03:15:43 --> Unknown column 'users.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = :id_order:', [...], false)
+ 5 APPPATH\Controllers\Api\OrderController.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\OrderController->orderShow('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 03:15:50 --> Unknown column 'users.id' in 'on clause'
+CRITICAL - 2022-12-22 03:15:50 --> Unknown column 'users.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = :id_order:', [...], false)
+ 5 APPPATH\Controllers\Api\OrderController.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\OrderController->orderShow('3')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 03:15:51 --> Unknown column 'users.id' in 'on clause'
+CRITICAL - 2022-12-22 03:15:51 --> Unknown column 'users.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = :id_order:', [...], false)
+ 5 APPPATH\Controllers\Api\OrderController.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\OrderController->orderShow('4')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 03:15:52 --> Unknown column 'users.id' in 'on clause'
+CRITICAL - 2022-12-22 03:15:52 --> Unknown column 'users.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = :id_order:', [...], false)
+ 5 APPPATH\Controllers\Api\OrderController.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\OrderController->orderShow('5')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 03:15:54 --> Unknown column 'users.id' in 'on clause'
+CRITICAL - 2022-12-22 03:15:54 --> Unknown column 'users.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `users`.`id` = `orders`.`user_id`
+WHERE `id_order` = :id_order:', [...], false)
+ 5 APPPATH\Controllers\Api\OrderController.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\OrderController->orderShow('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 03:16:29 --> Unknown column 'user.id' in 'on clause'
+CRITICAL - 2022-12-22 03:16:29 --> Unknown column 'user.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `user`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `user`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `user`.`id` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `user`.`id` = `orders`.`user_id`
+WHERE `id_order` = :id_order:', [...], false)
+ 5 APPPATH\Controllers\Api\OrderController.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\OrderController->orderShow('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 03:17:50 --> Unknown column 'id.users' in 'on clause'
+CRITICAL - 2022-12-22 03:17:50 --> Unknown column 'id.users' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `id`.`users` = `orders`.`user_id`
+WHERE `id_order` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `id`.`users` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `id`.`users` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `id`.`users` = `orders`.`user_id`
+WHERE `id_order` = :id_order:', [...], false)
+ 5 APPPATH\Controllers\Api\OrderController.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\OrderController->orderShow('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 03:18:00 --> Unknown column 'id.user' in 'on clause'
+CRITICAL - 2022-12-22 03:18:00 --> Unknown column 'id.user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `id`.`user` = `orders`.`user_id`
+WHERE `id_order` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `id`.`user` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `id`.`user` = `orders`.`user_id`
+WHERE `id_order` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+LEFT JOIN `users` ON `id`.`user` = `orders`.`user_id`
+WHERE `id_order` = :id_order:', [...], false)
+ 5 APPPATH\Controllers\Api\OrderController.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\OrderController->orderShow('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-22 03:28:02 --> syntax error, unexpected identifier "reutrn"
+in APPPATH\Controllers\Api\OrderController.php on line 36.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Api\\OrderController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Api\\OrderController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Api\\OrderController')
+ 4 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Api\\OrderController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-12-22 03:39:46 --> Unknown column 'id_user' in 'where clause'
+CRITICAL - 2022-12-22 03:39:46 --> Unknown column 'id_user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+WHERE `id_user` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+WHERE `id_user` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+WHERE `id_user` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `orders`
+LEFT JOIN `books` ON `books`.`id_book` = `orders`.`book_id`
+WHERE `id_user` = :id_user:', [...], false)
+ 5 APPPATH\Controllers\Api\OrderController.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Api\OrderController->show('2')
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
